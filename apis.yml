@@ -1,8 +1,25 @@
 aid: control4
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/control4.png
 name: Control4
-description: 'Control4 is a company surfaced as a portfolio company of sapphire-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: iot. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Control4 is a smart home and building automation platform, now part of Snap One / ADI
+  Global (Resideo), headquartered in Salt Lake City, Utah. It unifies control of lighting, audio/video,
+  home theater, climate, security, shades, and voice across residential and commercial spaces through
+  a single interface on smartphones, touchscreens, and on-wall keypads. Control4 is delivered through
+  a network of certified integrators rather than direct-to-consumer sales, and interoperates with more
+  than 25,000 third-party devices. For developers it offers the DriverWorks SDK (a Lua-based framework
+  for building device drivers), the Control4 Developer Portal for OAuth application registration against
+  the Control4 cloud, and public first-party libraries on GitHub.'
 url: https://raw.githubusercontent.com/api-evangelist/control4/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Iot
+- IoT
+- Smart Home
+- Home Automation
+- Building Automation
+- Lighting Control
+- Audio Video
+- Drivers
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +48,34 @@ maintainers:
 common:
 - type: Website
   url: https://www.control4.com/
+- type: DeveloperPortal
+  url: https://developer.control4.com/
+- type: Documentation
+  url: https://docs.control4.com/docs/
+- type: DriverWorks
+  url: https://control4.github.io/docs-driverworks-api/
+- type: GitHubOrganization
+  url: https://github.com/control4
+- type: Blog
+  url: https://www.control4.com/blog
+- type: Support
+  url: https://support.control4.com/
+- type: SignUp
+  url: https://customer.control4.com/
+- type: PrivacyPolicy
+  url: https://www.snapone.com/legal
+- type: TermsOfService
+  url: https://www.snapone.com/legal
+- type: Packages
+  url: packages/control4-packages.yml
+- type: SDKs
+  url: packages/control4-packages.yml
+- type: LLMsTxt
+  url: llms/control4-llms.txt
+- type: DomainSecurity
+  url: security/control4-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/control4
+note: >-
+  Control4 does not publish client SDKs to public package registries (npm, PyPI, etc.).
+  Its first-party developer libraries are distributed as source from the github.com/control4
+  organization and target the Lua-based DriverWorks SDK for building device drivers, not a
+  REST client. The unofficial pyControl4 library on PyPI is third-party and is not listed here.
+packages:
+- language: lua
+  registry: github
+  name: drivers-common-public
+  url: https://github.com/control4/drivers-common-public
+  install: git clone https://github.com/control4/drivers-common-public
+  description: Control4-developed Lua libraries adding OAuth, JSON, timers, URL requests, SSDP discovery and helper functionality on top of DriverWorks.
+  official: true
+- language: python
+  registry: github
+  name: drivers-driverpackager
+  url: https://github.com/control4/drivers-driverpackager
+  install: git clone https://github.com/control4/drivers-driverpackager
+  description: Python scripts to build (optionally encrypted) Control4 .c4z driver package files.
+  official: true
+- language: go
+  registry: github
+  name: helloworld-golang
+  url: https://github.com/control4/helloworld-golang
+  install: git clone https://github.com/control4/helloworld-golang
+  description: Hello World starter for Go.
+  official: true

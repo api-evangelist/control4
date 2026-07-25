@@ -1,0 +1,24 @@
+# Control4
+
+> Control4 is a smart home and building automation platform, part of Snap One / ADI Global (Resideo), headquartered in Salt Lake City, Utah. It unifies control of lighting, audio/video, home theater, climate, security, shades, and voice across residential and commercial spaces through a single interface. Control4 is delivered through certified integrators and interoperates with 25,000+ third-party devices. For developers it offers the Lua-based DriverWorks SDK, a Developer Portal for OAuth app registration against the Control4 cloud, and first-party libraries on GitHub.
+
+## Developer
+- [Control4 Developer Portal](https://developer.control4.com/): Register OAuth applications against the Control4 cloud; docs and sandbox.
+- [Documentation](https://docs.control4.com/docs/): Getting-started guides, product docs, and FAQs.
+- [DriverWorks SDK Reference](https://control4.github.io/docs-driverworks-api/): Lua API reference for building Control4 device drivers.
+
+## Code
+- [GitHub Organization](https://github.com/control4): First-party repositories.
+- [drivers-common-public](https://github.com/control4/drivers-common-public): Lua libraries (OAuth, JSON, timers, URL requests, SSDP) on top of DriverWorks.
+- [drivers-driverpackager](https://github.com/control4/drivers-driverpackager): Python scripts to build .c4z driver files.
+- [docs-driverworks](https://github.com/control4/docs-driverworks): Home page for the DriverWorks SDK.
+
+## Company
+- [Control4 Website](https://www.control4.com/): Products and solutions overview.
+- [Blog](https://www.control4.com/blog): Company and product news.
+- [Support](https://support.control4.com/): Support portal.
+- [Customer Login](https://customer.control4.com/): Account access for owners.
+- [Legal / Privacy](https://www.snapone.com/legal): Snap One legal, privacy, and terms.
+
+## Notes
+- No public REST OpenAPI or RAML specification is published; the developer surface is the Lua DriverWorks SDK plus an OAuth-gated cloud API used by first-party and third-party clients.
